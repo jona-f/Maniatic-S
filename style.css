@@ -28,15 +28,25 @@ header {
 }
 
 .logo {
-    font-family: 'Chau Philomene One';
-    line-height: 60px;
     position: fixed;
     float: left;
     margin: 16px 46px;
     color: #fff;
     font-weight: bold;
-    font-size: 25px;
-    letter-spacing: 2px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.ms-logo {
+    border-radius: 5px;
+    width: 75px;
+    height: 75px;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 nav {
@@ -214,6 +224,10 @@ nav ul li a {
     font-size: 14px;
 }
 
+.mensajes {
+    height: 100px;
+}
+
 input[type="submit"] {
     display: block;
     padding: 6px 30px;
@@ -274,4 +288,13 @@ input[type="submit"] {
     color: #000;
     font-size: 20px;
     text-align: center;
+}
+
+@media (max-width: 1100px){
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
